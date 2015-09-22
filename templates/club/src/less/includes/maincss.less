@@ -1,0 +1,127 @@
+body {
+  padding-top: 30px;
+}
+
+a, .btn {
+  -moz-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+a {
+  color: #34495E;
+  outline: none !important;
+}
+
+a:hover, a:focus {
+  cursor: pointer;
+}
+
+.button-variant(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > .dropdown-toggle & {
+    color: @color;
+    background-color: darken(@background, 10%);
+    border-color: darken(@border, 12%);
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle & {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: @background;
+      border-color: @border;
+    }
+  }
+
+  .badge {
+    color: @background;
+    background-color: @color;
+  }
+}
+
+.btn-default {
+  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+}
+
+.btn-primary {
+  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+}
+
+// Success appears as green
+.btn-success {
+  .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
+}
+
+// Info appears as blue-green
+.btn-info {
+  .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
+}
+
+// Warning appears as orange
+.btn-warning {
+  .button-variant(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
+}
+
+// Danger and error appear as red
+.btn-danger {
+  .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}
+
+body {
+  background-color: @body-bg;
+}
+
+.page-content {
+
+  background-color: @page-content-bgr;
+
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:hover,
+  .nav-tabs > li.active > a:focus {
+    background-color: @page-content-bgr;
+  }
+
+  .panel-default > .panel-heading,
+  .breadcrumb {
+    background-color: @breadcrumb-bgr;
+  }
+
+  > .container {
+    padding-top: 15px;
+    min-height: 400px;
+  }
+
+  .btn {
+    border: medium none;
+  }
+
+  .mybutton {
+    width: 100%;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+  .sidebar-right .mybutton {
+    margin-bottom: 15px;
+  }
+
+}

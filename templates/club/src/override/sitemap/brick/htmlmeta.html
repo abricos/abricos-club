@@ -1,0 +1,47 @@
+<!--[*]
+[ph=sys:meta_title][/ph]
+[ph=sys:meta_keys][/ph]
+[ph=sys:meta_desc][/ph]
+
+[var=meta_title][/var]
+[var=meta_keys][/var]
+[var=meta_desc][/var]
+
+[ph=sys:address][/ph]
+[ph=sys:phone][/ph]
+[ph=sys:counter][/ph]
+
+[var=js][/var]
+[var=css][/var]
+
+[mod=sys]jsvar[/mod]
+[mod=rss]meta[/mod]
+
+[var=ttvs]0.1.1[/var]
+
+[css]/vendor/bootstrap/css/bootstrap.min.css[/css]
+[css]/vendor/font-awesome/css/font-awesome.min.css[/css]
+
+[tcss]main.css[/tcss]
+
+[*]-->
+<head>
+
+    <title>[var]meta_title[/var]</title>
+    <meta name="keywords" content="[var]meta_keys[/var]">
+    <meta name="description" content="[var]meta_desc[/var]">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    [mod]sys:jsvar[/mod]
+
+    <script src="/gzip.php?v=[var]ttvs[/var]&file=/vendor/jquery/jquery.min.js,/vendor/bootstrap/js/bootstrap.min.js,/tt/timerhan/js/ui.js"></script>
+
+    [var]js[/var]
+
+    [var]css[/var]
+
+    [mod]rss:meta[/mod]
+
+    [ph]sys:counter[/ph]
+</head>

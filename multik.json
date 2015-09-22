@@ -1,0 +1,107 @@
+{
+  "directory": "abricos.src",
+  "groups": {
+    "core": {
+      "directory": "abricos.src"
+    },
+    "installer": {
+      "directory": "abricos.src"
+    },
+    "module": {
+      "directory": "abricos.src/modules"
+    },
+    "template": {
+      "directory": "abricos.src/templates"
+    },
+    "vendor": {
+      "directory": "abricos.src/vendor"
+    }
+  },
+  "dependencies": {
+    "core": {
+      "group": "core",
+      "repo": "https://github.com/abricos/abricos-core.git",
+      "version": "core-0.5.7"
+    },
+    "install": {
+      "group": "installer",
+      "repo": "https://github.com/abricos/abricos-installer.git",
+      "version": "master"
+    },
+    "abricos.js": {
+      "group": "vendor",
+      "repo": "https://github.com/abricos/abricos.js.git",
+      "version": "master"
+    },
+    "bos": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-bos.git",
+      "version": "0.1.7"
+    },
+    "bostick": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-bostick.git",
+      "version": "0.1.3"
+    },
+    "filemanager": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-filemanager.git",
+      "version": "master"
+    },
+    "feedback": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-feedback.git",
+      "version": "0.2.7"
+    },
+    "news": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-news.git",
+      "version": "0.2.8"
+    },
+    "note": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-note.git",
+      "version": "0.1.4"
+    },
+    "notify": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-notify.git",
+      "version": "master"
+    },
+    "sitemap": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-sitemap.git",
+      "version": "0.2.7"
+    },
+    "tag": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-tag.git",
+      "version": "master"
+    },
+    "tinymce": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-tinymce.git",
+      "version": "0.1.7"
+    },
+    "todolist": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-todolist.git",
+      "version": "0.1.3"
+    },
+    "uprofile": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-uprofile.git",
+      "version": "0.1.6"
+    },
+    "user": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-user.git",
+      "version": "0.3.1"
+    },
+    "widget": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-widget.git",
+      "version": "master"
+    }
+  }
+}

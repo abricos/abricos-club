@@ -1,0 +1,97 @@
+<!--[*]
+
+[mod=sitemap]hmenu|noWrap=true[/mod]
+
+[ph=sys:address][/ph]
+[ph=sys:phone][/ph]
+[ph=sys:email][/ph]
+[mod=user]usermenubutton[/mod]
+
+[var=ttowner][/var]
+
+[*]-->
+<header>
+    <div class="navbar navbar-fixed-top" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <div class="navbar-top">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="pull-left">
+                        <ul class="nonavmenu">
+                            <li class="address hide">
+                                <a itemprop="url" href="/contacts/"
+                                   title="Адрес клуба Абрикос">
+                                    <span itemprop="name"><i class="fa fa-university"></i> [ph]sys:address[/ph]</span>
+                                </a>
+                            </li>
+                            <li class="phone">
+                                <a itemprop="url" href="/contacts/" title="Телефон клуба Абрикос">
+                                    <span itemprop="name"><i class="fa fa-phone"></i> [ph]sys:phone[/ph]</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">
+                        <ul class="nonavmenu">
+                            <li>
+                                <a itemprop="url" href="/sitemap/" title="Карта сайта">
+                                    <span itemprop="name"><i class="fa fa-sitemap"></i> Карта сайта</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a itemprop="url" href="/contacts/" title="Контакты">
+                                    <span itemprop="name"><i class="fa fa-envelope"></i> Контакты</span>
+                                </a>
+                            </li>
+                            [mod]user:usermenubutton[/mod]
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="navbar megamenu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+
+        <div class="container navbar-scrolling">
+            <div class="navbar-header logo">
+                <a href="/" title="Клуб Абрикос">
+                    <img src="/i/logo.png" alt="Клуб Абрикос" width="120" height="auto"/>
+                </a>
+            </div>
+            <div class="navbar-header">
+                <div>
+                    <a class="navbar-brand" href="/" title="Клуб Абрикос">
+                        Клуб Абрикос
+                    </a>
+                </div>
+                <div class="description">
+                    <p>
+                        Сообщество разработчиков платформы Абрикос
+                    </p>
+                </div>
+            </div>
+
+            <div class="pull-right callback-block">
+                <a href="#" data-toggle="modal" data-target="#callbackDialog">
+                    <img class="pull-right" src="/tt/[var]ttowner[/var]/i/callback-52.png" width="52px" height="52px"/>
+                    <span class="bk text-right">
+                        <span class="city">г. Казань</span>
+                        <span class="phone" title="Наш телефон">
+                            [ph]sys:phone[/ph]
+                        </span>
+                    </span>
+
+                    <span class="tl text-right" title="Заказать бесплатно обратный звонок">
+                        Заказать обратный звонок
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="horz-menu-line">
+            <div class="container">
+                [mod]sitemap:hmenu[/mod]
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,141 @@
+<!--[*]
+
+[ph=sys:address][/ph]
+[ph=sys:phone][/ph]
+
+[mod=sitemap]htmlmeta,vmenuaccord,breadcrumb,header,footer[/mod]
+[mod=news]newsblock[/mod]
+
+[*]--><!DOCTYPE html>
+<html lang="ru" class="yui3-loading">
+
+[mod]sitemap:htmlmeta[/mod]
+
+<body itemscope="" itemtype="http://schema.org/WebPage">
+
+[mod]sitemap:header[/mod]
+
+<div class="page-content">
+    <div class="container home">
+        <h2 class="section-title">
+            <span>Добро пожаловать в наш клуб!</span>
+        </h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Приглашаем в наш клуб</h4>
+                <ul>
+                    <li>Программистов</li>
+                    <li>Дизайнеров</li>
+                    <li>СЕО оптимизаторов</li>
+                    <li>Да и просто хороших людей</li>
+                </ul>
+
+                <h4>Есть вопросы? Звоните нам по телефону: [ph]sys:phone[/ph]</h4>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center"><strong>
+                            <span class="text-primary">Или воспользуйтесь онлайн формой для связи с нами</span>
+                        </strong></h3>
+                    </div>
+                    <div class="panel-body">
+                        <p class="text-center btn-lg">
+                            7 дней в неделю, 24 часа в сутки
+                        </p>
+
+                        <a href="#" data-toggle="modal" data-target="#questionCallbackDialog"
+                           class="btn btn-success mybutton btn-lg">
+                            Отправить нам свой вопрос
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <h4>Наш адрес: [ph]sys:address[/ph]</h4>
+
+                <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=8N7ELVx-vLGnRX8MzG-OtakHBzbl1AJL&width=auto&height=300"></script>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="row">
+            <div class="col-md-8">
+                [tt]content[/tt]
+            </div>
+            <div class="col-md-4">
+                <div class="mod-news">
+                    [mod]news:newsblock[/mod]
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+[mod]sitemap:footer[/mod]
+
+<div id="questionCallbackDialog" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">
+                    Отправить нам свой вопрос
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form id="questionCallback" class="feedback-status-input" role="form" method="post">
+                    <div class="panel-body">
+
+                        <div class="form-group">
+                            <label class="control-label">Имя</label> <sup class="text-danger">*</sup>
+                            <input type="text" name="fio" class="form-control field-required" data-wait="disable"
+                                   placeholder="Введите Ваше имя"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Контактный телефон</label> <sup class="text-danger">*</sup>
+                            <input type="text" name="phone" class="form-control field-required" data-wait="disable"
+                                   placeholder="Введите Ваш контактный телефон"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Email</label>
+                            <input type="text" name="email" class="form-control" data-wait="disable"
+                                   placeholder="Введите Ваш email (необязательно)"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ваш вопрос</label>
+                            <textarea name="message" class="form-control" rows="4" data-wait="disable"></textarea>
+                        </div>
+
+                        <hr/>
+
+                        <img src="/images/loading.gif" style="display: none" data-wait="show"/>
+
+                        <span class="feedback-complete-visible">
+                            Спасибо. Ваш вопрос принят. В ближайшее время мы перезвоним Вам!
+                        </span>
+
+                        <button type="submit" class="btn btn-primary feedback-complete-hide"
+                                data-wait="disable">
+                            Отправить вопрос
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

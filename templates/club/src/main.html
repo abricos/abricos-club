@@ -1,0 +1,35 @@
+<!--[*]
+
+[mod=sitemap]htmlmeta,vmenuaccord|fromMenu=eshop,breadcrumb,header,footer[/mod]
+[mod=news]newsblock[/mod]
+
+[*]--><!DOCTYPE html>
+<html lang="ru" class="yui3-loading">
+
+[mod]sitemap:htmlmeta[/mod]
+
+<body itemscope="" itemtype="http://schema.org/WebPage">
+
+[mod]sitemap:header[/mod]
+
+<div class="container page-content">
+    <div class="row">
+        <div class="col-md-9">
+            [mod]sitemap:breadcrumb[/mod]
+
+            [tt]content[/tt]
+        </div>
+        <div class="col-md-3">
+
+            [mod]sitemap:vmenuaccord[/mod]
+
+            [mod]news:newsblock[/mod]
+
+        </div>
+    </div>
+</div>
+
+[mod]sitemap:footer[/mod]
+
+</body>
+</html>

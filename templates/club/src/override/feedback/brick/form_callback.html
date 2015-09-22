@@ -1,0 +1,31 @@
+<!--[*]
+
+[*]-->
+<form class="kupeorder feedback-status-input" role="form" method="post">
+
+    <div class="form-group">
+        <input type="text" name="fio" class="form-control field-required" data-wait="disable"
+               placeholder="Ваше имя"/>
+    </div>
+    <div class="form-group">
+        <input type="text" name="phone" class="form-control field-required" data-wait="disable"
+               placeholder="Ваш телефон"/>
+    </div>
+    <div class="form-group">
+        <input type="text" name="email" class="form-control" data-wait="disable"
+               placeholder="Ваш email"/>
+    </div>
+
+    <input type="hidden" name="message" class="form-control"
+           value="Онлайн заявка"/>
+
+    <div class="form-group text-center">
+        <img src="/images/loading.gif" style="display: none" data-wait="show"/>
+        <span class="feedback-complete-visible">
+            Спасибо. Ваша заявка принята.
+        </span>
+        <button type="submit" class="btn btn-danger feedback-complete-hide" data-wait="disable">
+            Оставить заявку
+        </button>
+    </div>
+</form>

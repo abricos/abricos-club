@@ -1,0 +1,122 @@
+<!--[*]
+
+[ph=sys:phone][/ph]
+[ph=sys:address][/ph]
+[ph=sys:email][/ph]
+[var=version][/var]
+[var=ttowner][/var]
+
+[mcss=feedback]feedback.css[/mcss]
+
+[*]-->
+<footer itemscope itemtype="http://schema.org/WPFooter">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Как нас найти</h3>
+                    <ul>
+                        <li>
+                            <a href="/contacts/" title="Адрес и схема проезда">
+                                Адрес и схема проезда
+                            </a>
+                        </li>
+                        <li class="supportLi">
+                            <h4>
+                                <strong>
+                                    <a class="" href="callto:[ph]sys:phone[/ph]">
+                                        <i class="fa fa-phone"> </i>
+                                        [ph]sys:phone[/ph]
+                                    </a>
+                                </strong>
+                            </h4>
+                            <h4>
+                                <a class="" href="mailto:[ph]sys:email[/ph]">
+                                    <i class="fa fa-envelope-o"> </i>
+                                    [ph]sys:email[/ph]
+                                </a>
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3">
+                    <h3>О нас</h3>
+                    <ul>
+                        <li><a href="/contacts/" title="Адрес в Казани">Контакты</a></li>
+                        <li><a href="/o_kompanii/" title="О компании">О клубе</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left">
+                © <a href="/" title="Клуб Абрикос">
+                Клуб "Абрикос"
+            </a> - все права защищены
+            </p>
+
+            <p class="pull-right">
+                Работает на <a href="http://abricos.org"
+                               title="Система управления сайтом CMS Абрикос">Абрикос</a>
+                [var]version[/var]
+            </p>
+        </div>
+    </div>
+</footer>
+
+<div class="page-content">
+    <div id="callbackDialog" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span><span
+                            class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Заказать обратный звонок (бесплатно)</h4>
+                </div>
+                <form id="callbackDialogFeedback" class="feedback-status-input" role="form" method="post">
+                    <div class="modal-body">
+
+                        <img class="pull-right" src="/tt/[var]ttowner[/var]/i/callback-52.png" width="52px"
+                             height="52px"/>
+
+                        <p>
+                            Укажите Ваше имя и телефон, и в ближайшее время мы перезвоним Вам!
+                        </p>
+
+                        <div class="form-group">
+                            <label>Имя</label>
+                            <input type="text" name="fio" class="form-control" data-wait="disable"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон <sup class="red">*</sup></label>
+                            <input type="text" name="phone" class="form-control" data-wait="disable"/>
+                        </div>
+
+                        <input type="hidden" name="message" class="form-control" value="Прошу перезвонить мне"/>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <img src="/images/loading.gif" style="display: none" data-wait="show"/>
+                        <span class="feedback-complete-visible">
+                            Спасибо, Ваша заявка принята. В ближайшее время мы перезвоним Вам!
+                        </span>
+                        <button type="submit" class="btn btn-primary feedback-complete-hide" data-wait="disable">
+                            Отправить
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,103 @@
+header {
+  .navbar {
+    border-radius: 0;
+  }
+
+  .navbar-fixed-top {
+    position: inherit;
+
+    @media (min-width: 768px) {
+      position: fixed;
+    }
+
+    .navbar-top {
+      background-color: @top-line-bgr;
+    }
+
+    ul, ol {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nonavmenu {
+      & > li {
+        display: block;
+        float: left;
+
+        & > a {
+          color: @top-line-clr;
+          display: block;
+          float: right;
+          line-height: 30px;
+          padding: 0 20px 0 0;
+          text-decoration: none;
+          font-size: 12px;
+        }
+      }
+    }
+
+  }
+
+  .megamenu {
+
+    background: @scroll-menu-bgr;
+    border-width: 0 0 0px;
+
+    .mod-user-button {
+      & > .dropdown-menu {
+        left: inherit;
+        right: 0;
+      }
+      & > a {
+        padding-right: 0 !important;
+      }
+    }
+
+    .navbar-scrolling {
+      color: @scroll-menu-clr;
+
+      .navbar-brand {
+        font-size: 24px;
+      }
+
+      .navbar-header {
+        padding-left: 15px;
+        a {
+          color: @scroll-menu-clr;
+        }
+      }
+      .logo {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+      .description {
+        font-size: 18px;
+        clear: both;
+      }
+    }
+
+    .horz-menu-line {
+      background-color: @horz-menu-bgr;
+      border-top: @horz-menu-border-top;
+      border-bottom: @horz-menu-border-bot;
+    }
+
+    .navbar-nav > li > a {
+      color: @horz-menu-clr;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .nav > li.active,
+    .nav > li > a:hover,
+    .nav > li > a:focus,
+    .nav > li:hover > a,
+    .nav .open > a,
+    .nav .open > a:hover,
+    .nav .open > a:focus {
+      background: @horz-menu-item-bgrhover;
+    }
+
+  }
+}
