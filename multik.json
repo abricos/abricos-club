@@ -33,6 +33,11 @@
       "repo": "https://github.com/abricos/abricos.js.git",
       "version": "master"
     },
+    "blog": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-blog.git",
+      "version": "0.5.3"
+    },
     "bos": {
       "group": "module",
       "repo": "https://github.com/abricos/abricos-mod-bos.git",
@@ -52,6 +57,11 @@
       "group": "module",
       "repo": "https://github.com/abricos/abricos-mod-feedback.git",
       "version": "0.2.7"
+    },
+    "forum": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-forum.git",
+      "version": "0.1.8"
     },
     "news": {
       "group": "module",
