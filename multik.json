@@ -88,6 +88,11 @@
       "repo": "https://github.com/abricos/abricos-mod-sitemap.git",
       "version": "0.2.7"
     },
+    "socialist": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-socialist.git",
+      "version": "master"
+    },
     "tag": {
       "group": "module",
       "repo": "https://github.com/abricos/abricos-mod-tag.git",
